@@ -1,0 +1,175 @@
+body {
+    background-image: url(cottage.png); 
+    background-size: cover;
+    font-family: "consolas", sans-serif;
+
+    text-shadow: 2px 2px 2px grey;
+    box-shadow: 5px 5px 0px white;
+}
+h1 {
+    display: block;
+    width: fit-content;
+    margin: 1em auto;
+    color: white;
+    text-align: center;
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    text-decoration: lightgray dotted underline;
+    background: linear-gradient(to right, skyblue, lightgreen);
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+
+    /*animation: mySlide;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;*/
+
+    animation: 0.5s mySlide ease-out;
+}   
+h2 {
+    display: block;
+    width: fit-content;
+    margin: 1em auto;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: "consolas", sans-serif;
+    text-align: center;
+    text-decoration: lightgray underline;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+}
+p {
+    font-family: "consolas", sans-serif;
+    color: black;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(150, 150, 222, 0.8));
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+}
+label {
+    text-align: center;
+    font-family: "consolas", sans-serif;
+    color: white;
+}
+
+input {
+    margin: 0.5em;
+    font-family: "consolas", sans-serif;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+}
+
+button {
+    color: white;
+    text-decoration: bold;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-family: "consolas", sans-serif;
+    background-color: rgb(23, 58, 255);
+    transition: background-color 0.15s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(100, 152, 255);
+}
+
+#pGreen {
+    color: green;
+}
+.silly {
+    background-color: purple;
+}
+.goofy {
+    background-color: brown;
+}
+
+
+#booksTable {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.bookHeader {
+    background: linear-gradient(to right, darkblue, darkgreen);
+    text-align: center;
+    color: white;
+}
+.bookElement {
+    background: linear-gradient(to right, lightblue, lightgreen);
+    text-align: center;
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: pink;
+}
+a:hover {
+    color: lightgreen;
+}
+
+.fa-book {
+    color: grey;
+    font-size: 1.1em;
+}
+.fa-github {
+    display: block;
+    color: pink;
+    font-size: 2em;
+    margin: 0 auto;
+}
+.fa-github:hover {
+    color: lightgreen;
+
+    animation:  0.5s slideLeft ease-out 0s forwards,
+                0.5s rotate ease-out 0.5s forwards;
+}
+
+@keyframes mySlide {
+    from {
+        margin-left: 100%;
+    }
+    to  {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        margin-left: 45%;
+    }
+    to {
+        margin-left: 40%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-45deg);
+    }
+}
+
+#counterLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: "Press start 2P", "consolas", sans-serif;
+}
+
+#counterButtons {
+    text-align: center;
+}
+
+#randomNumberLabel {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Press start 2P", "consolas", sans-serif;
+}
+#centerGenerateRandomNumber {
+    text-align: center;
+}

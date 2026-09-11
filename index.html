@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learningAllat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd581d5599.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        <i class="fa-solid fa-book"></i>
+        Welcome to learningAllat
+        <i class="fa-solid fa-book"></i>
+    </h1>
+    <p id="pGreen" class="silly">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="silly">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="goofy">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p class="goofy">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>SillyTable</h2>
+    <table id="booksTable">
+    <tbody>
+        <tr class="bookHeader">
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+        </tr>
+        <tr class="bookElement">
+            <td>Dune</td>
+            <td>Frank Herbert</td>
+            <td>123456-7890</td>
+        </tr>
+        <tr class="bookElement">
+            <td>Neuromancer</td>
+            <td>William Gibson</td>
+            <td>098765-4321</td>
+        </tr>
+    </tbody>
+    </table>
+    <h2>GitHub</h2>
+    <a href="https://github.com/ChimerA1337/BookLibrary" target="_blank" aria-label="My GitHub Profile">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <p id="JSp1"></p>
+    <p id="JSp2"></p>
+
+    <label>Username: </label>
+    <input type="text" id="usernameInput">
+    <button type="button" id="usernameSubmit">submit</button>
+    <p id="JSp3"></p>
+
+    <label>Enter a number: </label>
+    <input type="number" id="numberInput">
+    <button type="button" id="numberSubmit">submit</button>
+    <p id="JSp4"></p>
+
+    <!-- Counter Program -->
+    <h2>Counter</h2>
+    <label id="counterLabel">0</label><br>
+    <div id="counterButtons">
+    <button id="decreaseCounter" type="button">Decrease</button>
+    <button id="resetCounter" type="button">Reset</button>
+    <button id="increaseCounter" type="button">Increase</button>
+    </div>
+
+    <!-- Random number -->
+    <h2>Random Number</h2>
+    <label id="randomNumberLabel">0</label><br>
+    <div id="centerGenerateRandomNumber">
+    <button id="generateRandomNumber" type="button">Generate Random Number</button>
+    </div>
+
+    <!-- Playing with checkboxes -->
+    <h2>Checkboxes, radios and ifs</h2>
+    <input type="checkbox" id="fortnite">
+    <label for="fortnite">Fortnite</label><br>
+    <input type="checkbox" id="marquesbrownlee">
+    <label for="marquesbrownlee">Marques Brown Lee</label><br><br>
+
+    <input type="radio" id="A" name="oneChoice">
+    <label for="A">A</label><br>
+    <input type="radio" id="B" name="oneChoice">
+    <label for="B">B</label><br>
+    <input type="radio" id="C" name="oneChoice">
+    <label for="C">C</label><br>
+
+    <button type="submit" id="submitCheckboxes">Submit</button>
+
+    <p id="checkboxResult"></p>
+    <p id="radioResult"></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
