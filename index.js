@@ -98,3 +98,80 @@ checkboxesSubmit.onclick = function() {
     radioParagraph = "You checked: ";
 }
 
+// Number guessing game
+
+const minNum = 1;
+const maxNum = 100;
+const answer = Math.floor(Math.random() * (maxNum - minNum) + 1);
+const guessSubmit = document.getElementById("guessSubmit");
+
+let attempts = 0;
+let guess;
+let running = true;
+
+document.getElementById("guessingGameParagraph").textContent = `Enter a guess, a number between ${minNum} and ${maxNum}.`;
+
+guessSubmit.onclick = function() {
+    attempts++;
+    guess = document.getElementById("guessNum").value;
+    guess = Number(guess);
+
+    if(isNaN(guess)) {
+        window.alert("Please enter a valid number.");
+    }
+
+    if(guess == answer) {
+        document.getElementById("guessingGameResult").textContent = "Correct!";
+    }
+    else if(guess > answer) {
+            document.getElementById("guessingGameResult").textContent = "Incorrect :(\ntry a lower number.";
+        }
+    else if(guess < answer) {
+        document.getElementById("guessingGameResult").textContent = "Incorrect :(\ntry a higher number.";
+    }
+    document.getElementById("attemptsCounter").textContent = `Attempts: ${attempts}`;
+}
+
+// Temperature conversion program
+
+const toFahrenheit = document.getElementById("toFahrenheit");
+const toCelsius = document.getElementById("toCelsius");
+
+function convert() {
+    let input = Number(document.getElementById("tempConvInput").value);
+    if(toFahrenheit.checked) {
+        input *= 9;
+        input /= 5;
+        input += 32;
+        document.getElementById("tempConvResult").textContent = `The temperature in fahrenheit is: ${input.toFixed(2)}`;
+    }
+    else if(toCelsius.checked) {
+        input -= 32;
+        input *= 5;
+        input /= 9;
+        document.getElementById("tempConvResult").textContent = `The temperature in celsius is: ${input.toFixed(2)}`;
+    }
+    else {
+        document.getElementById("tempConvResult").textContent = "Please pick an option to convert from and to.";
+    }
+}
+
+// Dice roller program
+
+function rollDice() {
+    const numOfDice = document.getElementById("numOfDice").value;
+    const diceResult = document.getElementById("diceResult");
+    const diceImages = document.getElementById("diceImages");
+    const values = [];
+    const images = [];
+
+    for(let i = 0; i < numOfDice; i++) {
+        const value = Math.floor(Math.random() * 6 + 1);
+        console.log(value);
+        values.push(value);
+        images.push(`<img src="diceImages/${value}.webp" alt="Dice ${value}">`);
+    }
+
+    diceResult.textContent = `Dice: ${values.join(', ')}`;
+    diceImages.innerHTML = images.join('');
+}

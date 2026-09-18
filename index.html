@@ -15,6 +15,10 @@
         Welcome to learningAllat
         <i class="fa-solid fa-book"></i>
     </h1>
+    <a href="http://127.0.0.1:5500/dice.html" target="_blank" aria-label="Link to my dice roller program">
+        <h3 type="link" id="diceRollerLink"><i class="fa-solid fa-dice"></i> Dice Roller Program</h3>
+    </a>
+
     <p id="pGreen" class="silly">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p class="silly">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p class="goofy">lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -92,6 +96,29 @@
 
     <p id="checkboxResult"></p>
     <p id="radioResult"></p>
+
+    <!-- Number Guessing Game -->
+    <h2>Guessing Game</h2>
+    <p id="guessingGameParagraph"></p>
+    <label id="guessingGameResult"></label><br>
+    <label>Enter a guess: </label>
+    <input type="number" id="guessNum">
+    <button type="button" id="guessSubmit">Submit</button><br>
+    <label id="attemptsCounter">Attempts: 0</label><br><br>
+
+    <!-- Temperature Conversion Program -->
+    <form>
+        <h2>Temperature Conversion Program</h2>
+        <input type="number" id="tempConvInput" value="0"><br>
+
+        <input type="radio" id="toFahrenheit" name="tempConvUnit">
+        <label for="toFahrenheit">Celsius <i class="fa-solid fa-arrow-right"></i> Fahrenheit</label><br>
+        <input type="radio" id="toCelsius" name="tempConvUnit">
+        <label for="toCelsius">Fahrenheit <i class="fa-solid fa-arrow-right"></i> Celsius</label><br>
+
+        <button type="button" onclick="convert()">Submit</button>
+        <p id="tempConvResult">Result</p><br><br>
+    </form>
 
     <script src="index.js"></script>
 </body>
