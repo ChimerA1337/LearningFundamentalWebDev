@@ -174,12 +174,12 @@ a:hover {
 }
 
 form {
-    background-color: rgba(99, 205, 145, 0.8);
+    background-color: rgba(99, 205, 145, 0.5);
     text-align: center;
-    max-width: 25em;
+    max-width: 100em;
     margin: auto;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.5em;
+    border-radius: 0.5em;
     box-shadow: 5px 5px 15px black;
 }
 
@@ -201,4 +201,9 @@ form {
 #diceImages img{
     width: 150px;
     margin: 5px;
+}
+
+#passwordGenkLink {
+    text-align: center;
+    margin: auto;
 }
