@@ -1,8 +1,9 @@
 body {
-    background-image: url(cottage.png); 
+    background-color: black;
     background-size: cover;
     font-family: "consolas", sans-serif;
     text-shadow: 2px 2px 2px grey;
+    padding: 0.3em 0.5em;
 }
 h1 {
     display: block;
@@ -21,6 +22,7 @@ h2 {
     display: block;
     width: fit-content;
     margin: 1em auto;
+    color: white;
     background: rgba(255, 255, 255, 0.2);
     font-family: "consolas", sans-serif;
     text-align: center;
@@ -34,11 +36,15 @@ p {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(150, 150, 222, 0.8));
     padding: 0.3em 0.5em;
     border-radius: 0.5em;
+    width: 65em;
+    text-align: left;
+    margin: 0.5em 5em;
 }
 label {
     text-align: center;
     font-family: "consolas", sans-serif;
     color: white;
+    margin: 0.5em 5em;
 }
 
 input {
@@ -62,6 +68,15 @@ button {
 
 button:hover {
     background-color: rgb(100, 152, 255);
+}
+
+#linksContainer {
+    display: block;
+    width: fit-content;
+    margin: 1em auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
 }
 
 #pGreen {
@@ -173,6 +188,12 @@ a:hover {
     font-family: "Press start 2P", "consolas", sans-serif;
 }
 
+.checkboxes {
+    margin: 1em 1em;
+}
+
+
+
 form {
     background-color: rgba(99, 205, 145, 0.5);
     text-align: center;
@@ -181,11 +202,6 @@ form {
     padding: 0.5em;
     border-radius: 0.5em;
     box-shadow: 5px 5px 15px black;
-}
-
-#diceRollerLink {
-    text-align: center;
-    margin: auto;
 }
 
 #diceRollerContainer {
@@ -201,9 +217,5 @@ form {
 #diceImages img{
     width: 150px;
     margin: 5px;
-}
-
-#passwordGenkLink {
-    text-align: center;
-    margin: auto;
+    background-color: white;
 }
