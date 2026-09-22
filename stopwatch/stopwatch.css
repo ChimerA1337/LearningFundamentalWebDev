@@ -1,0 +1,56 @@
+body {
+    margin: auto;
+    color: white;
+    background-color: black;
+    font-family: "consolas", sans-serif;
+    text-shadow: 2px 2px 2px grey;
+}
+
+#stopwatchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30vh;
+}
+
+#counter {
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(0.1em);
+    background-color: rgba(107, 107, 107, 0.2);
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    width: fit-content;
+    margin: auto;
+}
+
+button {
+    text-align: center;
+    display: block;
+    width: 5em;
+    background: rgba(105, 187, 246, 0.478);
+    color: white;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px white;
+    cursor: pointer;
+    margin: 0 0.5em;
+    font-size: 1.5em;
+    transition: 0.3s ease;
+}
+button:hover {
+    background: rgb(142, 213, 254);
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 0.5em auto;
+    padding: 0.3em 0.5em;
+}
