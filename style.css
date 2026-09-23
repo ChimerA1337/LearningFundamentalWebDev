@@ -30,6 +30,13 @@ h2 {
     padding: 0.3em 0.5em;
     border-radius: 0.5em;
 }
+h3 {
+    margin: 0.05em auto;
+    font-family: "consolas", sans-serif;
+    text-align: left;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+}
 p {
     font-family: "consolas", sans-serif;
     color: black;
@@ -75,7 +82,7 @@ button:hover {
     width: fit-content;
     margin: 1em auto;
     background: rgba(255, 255, 255, 0.2);
-    padding: 0.5em 1em;
+    padding: 1em 1em;
     border-radius: 0.5em;
 }
 
@@ -191,8 +198,6 @@ a:hover {
 .checkboxes {
     margin: 1em 1em;
 }
-
-
 
 form {
     background-color: rgba(99, 205, 145, 0.5);
