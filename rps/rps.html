@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css">
+    <script src="https://kit.fontawesome.com/dd581d5599.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="choices">
+        <button onclick="playGame('r')"><i class="fa-solid fa-hand-fist"></i></button>
+        <button onclick="playGame('p')"><i class="fa-solid fa-hand"></i></button>
+        <button onclick="playGame('s')"><i class="fa-solid fa-hand-scissors"></i></button>
+    </div>
+
+    <div id="playerDisplay">Player: </div>
+    <div id="computerDisplay">Computer: </div>
+    <div id="resultDisplay">Tie!</div>
+
+    <div class="scoreDisplay">Player Score: 
+        <span id="playerScoreDisplay">0</span>
+    </div>
+    <div class="scoreDisplay">Computer Score: 
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <script src="rps.js"></script>
+</body>

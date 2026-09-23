@@ -175,3 +175,23 @@ function rollDice() {
     diceResult.textContent = `Dice: ${values.join(', ')}`;
     diceImages.innerHTML = images.join('');
 }
+
+
+// Mouse Events
+
+const mouseEventBox = document.getElementById("mouseEventBox");
+
+mouseEventBox.addEventListener("click", event => {
+    event.target.style.backgroundColor = "tomato";
+    event.target.textContent = "hit!";
+});
+
+mouseEventBox.addEventListener("mouseover", event => {
+    event.target.style.backgroundColor = "yellow";
+    event.target.textContent = "dont click ahahah";
+});
+
+mouseEventBox.addEventListener("mouseout", event => {
+    event.target.style.backgroundColor = "lightgreen";
+    event.target.textContent = "Any clickers :]";
+});
