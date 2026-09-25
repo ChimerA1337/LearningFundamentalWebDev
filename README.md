@@ -1,7 +1,5 @@
 # Learning Fundamental Web Dev
-This is a throwaway repo for various miniprojects I made to learn JavaScript, html and css, uploaded to:
-
-[link text](https://sillyrepo.timsergelstam.dev/)
+This is a throwaway repo for various miniprojects I made to learn JavaScript, html and css, uploaded to: [here](https://sillyrepo.timsergelstam.dev/) (It's my personal website)
 
 ## Included projects
 - Dice Roller Program
